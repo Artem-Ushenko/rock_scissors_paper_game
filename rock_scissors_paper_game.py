@@ -36,9 +36,9 @@ if my_choice == 0:
     print(rock)
     print(f"Computer chose: \n {pc_choice}")
     if pc_choice == rock:
-        print("Nichia!")
+        print("It's a draw!")
     elif pc_choice == paper:
-        print("You loose!")
+        print("You lose!")
     elif pc_choice == scissors:
         print("You win!")
 
@@ -49,7 +49,7 @@ elif my_choice == 1:
     if pc_choice == rock:
         print("You win!")
     elif pc_choice == paper:
-        print("Nichia")
+        print("It's a draw")
     elif pc_choice == scissors:
         print("You lose!")
 
@@ -57,11 +57,11 @@ elif my_choice == 2:
     print(scissors)
     print(f"Computer chose: \n {pc_choice}")
     if pc_choice == rock:
-        print("Your lose!")
+        print("You lose!")
     elif pc_choice == paper:
         print("You win!")
     elif pc_choice == scissors:
-        print("Nichia")
+        print("It's a draw")
 
 else:
     print("Please enter your choice number (0-2) !!!")
