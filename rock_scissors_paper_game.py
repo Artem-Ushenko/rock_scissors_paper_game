@@ -27,11 +27,41 @@ scissors = '''
       (____)
 ---.__(___)
 '''
+pc_choice_list = [rock, paper, scissors]
 
 my_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors: "))
-pc_choice = [rock, paper, scissors]
+pc_choice = random.choice(pc_choice_list)
 
-pc_score = 0
-my_score = 0
+if my_choice == 0:
+    print(rock)
+    print(f"Computer chose: \n {pc_choice}")
+    if pc_choice == rock:
+        print("Nichia!")
+    elif pc_choice == paper:
+        print("You loose!")
+    elif pc_choice == scissors:
+        print("You win!")
 
-print(random.choice(pc_choice))
+
+elif my_choice == 1:
+    print(paper)
+    print(f"Computer chose: \n {pc_choice}")
+    if pc_choice == rock:
+        print("You win!")
+    elif pc_choice == paper:
+        print("Nichia")
+    elif pc_choice == scissors:
+        print("You lose!")
+
+elif my_choice == 2:
+    print(scissors)
+    print(f"Computer chose: \n {pc_choice}")
+    if pc_choice == rock:
+        print("Your lose!")
+    elif pc_choice == paper:
+        print("You win!")
+    elif pc_choice == scissors:
+        print("Nichia")
+
+else:
+    print("Please enter your choice number (0-2) !!!")
